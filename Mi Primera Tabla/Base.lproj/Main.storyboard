@@ -55,7 +55,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="EJB-WW-BKf">
-                                <rect key="frame" x="29" y="385" width="269" height="30"/>
+                                <rect key="frame" x="23" y="385" width="275" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -68,6 +68,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2bs-eA-3uU">
+                                <rect key="frame" x="16" y="511" width="288" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.1927646482" blue="0.2270471054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Comprar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rWR-vh-EJU" kind="push" id="SKg-DI-CP8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -81,7 +92,71 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5UH-kf-C8k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="626" y="124"/>
+            <point key="canvasLocation" x="898" y="124"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="crf-l0-GmW">
+            <objects>
+                <viewController id="rWR-vh-EJU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n87-Kl-yJp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Gracias por tu compra!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8j6-ZH-VUb">
+                                <rect key="frame" x="16" y="85" width="288" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.2379557118" green="1" blue="0.27309666290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RnK-zJ-anV">
+                                <rect key="frame" x="16" y="482" width="288" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.32323750740000001" green="0.86508487999999994" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Volver a inicio">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="ESO-SG-G4O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4U1-GZ-nE2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wDo-YG-gEH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1292" y="128"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HjZ-c4-9LX">
+            <objects>
+                <viewController id="RhB-9Z-Vuc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RJh-C8-igq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uPz-5X-QN6">
+                                <rect key="frame" x="87" y="318" width="147" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.32323750740000001" green="0.86508487999999994" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Lista de Artìculos">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="rkO-Tv-lvw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JLh-84-Ss2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kQU-ks-LKa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46" y="124"/>
         </scene>
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
@@ -138,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="215" y="124"/>
+            <point key="canvasLocation" x="475" y="124"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yPJ-9q-xdE">
@@ -151,12 +226,15 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7eJ-RE-7lh"/>
+                        <segue destination="RhB-9Z-Vuc" kind="relationship" relationship="rootViewController" id="IBH-RT-tMM"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F8Q-FP-qSJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-273" y="124"/>
+            <point key="canvasLocation" x="-379" y="116"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ESO-SG-G4O"/>
+    </inferredMetricsTieBreakers>
 </document>
